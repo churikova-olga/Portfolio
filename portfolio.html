@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Портфолио</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header-logo">
+                Портфолио
+            </div>
+            <div class="header-nav">
+                <ul class="header-nav-lists">
+                    <li class="header-list">
+                        <a class="link-nav" href="#about">Обо мне</a>
+                    </li>
+                    <li class="header-list">
+                        <a class="link-nav" href="#project">Проекты</a>
+                    </li>
+                    <li class="header-list">
+                        <a class="link-nav" href="#education">Образование</a>
+                    </li>
+                    <li class="header-list">
+                        <a class="link-nav" href="#achievements">Достижения</a>
+                    </li>
+                    <li class="header-list">
+                        <a class="link-nav" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-button">
+                <a href="https://github.com/churikova-olga?tab=repositories" class="git">
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section introduction">
+
+        <div class="split left">
+            <div class="centered">
+                <ul class="introduction-info">
+                    <li class="introduction-list name">Чурикова Ольга</li>
+                    <li class="introduction-list post">Веб-разработчик</li>
+                    <li class="introduction-list text-introduction"><b>Телефон</b> 8(958)643-18-86</li>
+                    <li class="introduction-list text-introduction"><b>Эл. почта</b> olga_churikova890@mail.ru</li>
+                    <li class="introduction-list text-introduction"><b>Город</b> Москва</li>
+                    <li class="introduction-list">
+                        <a href="https://vk.com/ochurikova" class="social-network">
+                            <img src="public/icon/vk.svg" height="50px" width="50px"></img>
+                        </a>
+                        <a href="https://www.instagram.com/anice_roonath/" class="social-network">
+                            <img src="public/icon/instagram.svg" height="50px" width="50px"></img>
+                        </a>
+                        <a href="t.me/anice2000" class="social-network">
+                            <img src="public/icon/telegram.svg" height="50px" width="50px"></img>
+                        </a>
+                    </li>
+                    <li class="introduction-list text-introduction"> <a class="link-nav" href="#about"><strong>Портфолио</strong>
+                        <img class="arrow" src="public/icon/arrow.png" height="20px" width="20px"></img></a>
+                        <a href="#contacts" class="introduction-but"> Связаться</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="split right">
+            <div class="centered img">
+                <img src="public/img/avatar.jpg" alt="avatar" height="500px" width="375px">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about" class="section about">
+        <div class="split left">
+            <div class="centered-column">
+                <a class="summary" href="public/summary.pdf" download>РЕЗЮМЕ</a>
+                <div class="title-section">
+                    <ul class="title-list">
+                        <li class="list">ОБО МНЕ</li>
+                        <li class="list">
+                            <hr class="hr">
+                        </li>
+                    </ul>
+                </div>
+                <div class="section-text">
+                    Мне 22 года и я студентка. Учусь по специальности информационные системы и технологии. Мне нравится веб-разработка, в свободное время я занимаюсь своими проектами. Люблю рисовать и настольные игры. Увлекаюсь шахматами и игрой го. На данный момент состою
+                    в яхт клубе. Мечтаю много путешествовать, так как нравится пробовать или узнавать что-то новое.
+                </div>
+            </div>
+        </div>
+
+        <div class="split right">
+            <div class="section-skills">
+                <div class="centered-column">
+                    <div class="title-section" style="margin: 70px 0 10px 0">
+                        <ul class="title-list">
+                            <li class="list">ЗНАНИЯ И НАВЫКИ</li>
+                            <li class="list">
+                                <hr class="hr">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section-text" style="width: 100%">
+                        <div class="slideshow-container">
+                            <div class="mySlides1 fade">
+                                <ul class="title-list slides-skills">
+                                    <li class="list circle">JS</li>
+                                    <li class="list circle">HTML</li>
+                                    <li class="list circle">CSS</li>
+                                    <li class="list circle">Python</li>
+                                </ul>
+                            </div>
+                            <div class="mySlides1 fade ">
+                                <ul class="title-list slides-skills">
+                                    <li class="list circle">Django</li>
+                                    <li class="list circle">Node.js</li>
+                                    <li class="list circle">Vue.js</li>
+                                    <li class="list circle">PHP</li>
+                                </ul>
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1, 0)">❮</a>
+                            <a class="next" onclick="plusSlides(1, 0)">❯</a>
+
+                        </div>
+                    </div>
+                    <div style="text-align:center">
+                        <span class="dot-one" onclick="currentSlide(1, 0)"></span>
+                        <span class="dot-one" onclick="currentSlide(2, 0)"></span>
+                    </div>
+
+                </div>
+                <div class="bar-skills">
+                    <div class="row">
+                        <div class="col">
+                            <div class="bar">
+                                <div class="list bar-text">РУКОВОДСТВО КОМАНДОЙ</div>
+                                <div class="bar-container">
+                                    <div class="bar-1 scale"></div>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="list bar-text">MS OFFICE</div>
+                                <div class="bar-container">
+                                    <div class="bar-2 scale"></div>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="list bar-text">FIGMA</div>
+                                <div class="bar-container">
+                                    <div class="bar-3 scale"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="bar">
+                                <div class="list bar-text">MySQL</div>
+                                <div class="bar-container">
+                                    <div class="bar-4 scale"></div>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="list bar-text">PostgreSQL</div>
+                                <div class="bar-container">
+                                    <div class="bar-5 scale"></div>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="list bar-text">MongoDB</div>
+                                <div class="bar-container">
+                                    <div class="bar-6 scale"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="english">Английский язык - A2</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="education" class="section education">
+
+        <div class="split left">
+            <div class="centered-column experience">
+                <div class="title-section">
+                    <ul class="title-list">
+                        <li class="list">ОПЫТ</li>
+                        <li class="list">
+                            <hr class="hr">
+                        </li>
+                    </ul>
+                    <ul class="education-block-list">
+                        <li class="education-list"><b>ПД "Яндекс Геймификация" 2022г - по настоящее время</b></li>
+                        <li class="education-list"><b>Фронтенд разработчик</b></li>
+                        <li class="education-list"><i>Москва, Россия</i></li>
+                    </ul>
+                    <ul class="education-block-list">
+                        <li class="education-list"><b>ПД "Город будущего" 2021г -2022г</b></li>
+                        <li class="education-list"><b>Бэкенд разработчик</b></li>
+                        <li class="education-list"><i>Москва, Россия</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="split right">
+            <div class="centered-column">
+                <div class="title-section  education-margin">
+                    <ul class="title-list">
+                        <li class="list">ОБРАЗОВАНИЕ</li>
+                        <li class="list">
+                            <hr class="hr">
+                        </li>
+                    </ul>
+
+                    <ul class="education-block-list">
+                        <li class="education-list"><b>2020г - 2024г</b></li>
+                        <li class="education-list"><b>Московский политехнический университет</b></li>
+                        <li class="education-list">Информационные системы и технологии</li>
+                        <li class="education-list"><i>Москва, Россия</i></li>
+                    </ul>
+
+                    <ul class="education-block-list">
+                        <li class="education-list"><b>2021г - 2022г</b></li>
+                        <li class="education-list"><b>Московский политехнический университет</b></li>
+                        <li class="education-list">ДПО по специальности "Веб-разработка"</li>
+                        <li class="education-list"><i>Москва, Россия</i></li>
+                    </ul>
+
+                    <ul class="education-block-list">
+                        <li class="education-list"><b>2022г - по настоящее время</b></li>
+                        <li class="education-list"><b>Нетология</b></li>
+                        <li class="education-list">Онлайн курс "Backend Node.js-разработчик"</li>
+                        <li class="education-list"><i>Москва, Россия</i></li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="achievements" class="section achievements" style="flex-direction: column;">
+        <div class="title-section gradient">
+            <ul class="title-list" style="margin: 0; justify-content: center;">
+                <li class="list">
+                    <hr class="hr">
+                </li>
+                <li class="list">МОИ ДОСТИЖЕНИЯ</li>
+                <li class="list">
+                    <hr class="hr">
+                </li>
+            </ul>
+        </div>
+        <div style="display:flex">
+            <div class="split-short left">
+                <div class="centered">
+                    <div class="row-achievements justify-left">
+                        <div class="column-achievements">
+                            <div class="content">
+                                <span class="title-achievements">1 место</span>
+                                <p class="text-achievements">Победитель хакатона "Цифра"</p>
+                            </div>
+                        </div>
+                        <div class="column-achievements">
+                            <div class="content">
+                                <span class="title-achievements">финалист</span>
+                                <p class="text-achievements">Финалист УМНИК "ИИ"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="split-short right">
+                <div class="centered">
+                    <div class="row-achievements justify-rigth">
+                        <div class="column-achievements">
+                            <div class="content">
+                                <span class="title-achievements">успеваемость</span>
+                                <p class="text-achievements">Отличная успеваемость, окончание колледжа с красным дипломом</p>
+                            </div>
+                        </div>
+                        <div class="column-achievements">
+                            <div class="content">
+                                <span class="title-achievements">спорт</span>
+                                <p class="text-achievements">Состою в сборной яхт клуба университета, победитель многих соревнований по шахматам</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="section project">
+
+        <div class="slideshow-container2">
+            <div class="mySlides2 fade">
+                <div class="project-position">
+                    <div class="project-title">
+                        <div class="project-center">
+                            <span class="project-text" style="font-size: 26px;">Проекты, в которых я участвовала</span></br>
+                            <span class="project-text" style="font-size: 16px;">Чурикова Ольга, <i>веб-разработчик</i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="project-position">
+                    <div class="project-title">
+                        <div class="project-center">
+                            <span class="project-text" style="font-size: 26px;">ComProPy</span></br>
+                            <p class="project-text-basic">Веб-приложение для кооперативного обучения языку Python. Пользователь может не только выкладывать свои задачи, но и решать задачи других пользователей. Приложение написано на Node.js с использованием Passport.js для регистрации
+                                и входа. В качестве шаблонизатора ejs.
+                            </p>
+                            <a class="button-project-git" href="https://github.com/churikova-olga/ComProPy">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="project-position">
+                    <div class="project-title">
+                        <div class="project-center">
+                            <span class="project-text" style="font-size: 26px;">RockPaperScissors</span></br>
+                            <p class="project-text-basic">Брвузерная игра камень ножницы бумага с компьютером. Написана игра на Vue.js.
+                            </p>
+                            <a class="button-project-git" href="https://github.com/churikova-olga/Rock-Paper-Scissors">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="project-position">
+                    <div class="project-title">
+                        <div class="project-center">
+                            <span class="project-text" style="font-size: 26px;">Яндекс Геймификация</span></br>
+                            <p class="project-text-basic"> система нематериальной мотивации для сотрудников СПП (ООК и ВКЦ). Система построена с использованием игрового мышления и динамики игр для вовлечения сотрудников в рабочий процесс. Используемый стек технологий Django+Vue cli.
+                            </p>
+                            <a class="button-project-git" href="http://project-lending.std-1550.ist.mospolytech.ru/">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mySlides2 fade">
+                <div class="project-position">
+                    <div class="project-title">
+                        <div class="project-center">
+                            <span class="project-text" style="font-size: 26px;">Library</span></br>
+                            <p class="project-text-basic">Проект заключался в создании библиотеки. Пользователь мог выкладывать книги, редактировать, читать, удалять и если нужно скачивать. Используемый стек технологий Node.js+CSS/HTML/JS. В качестве БД была исользована MongoDB, так
+                                же приложение было докерезировано</p>
+                            <a class="button-project-git" href="https://github.com/churikova-olga/library-netology">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="project-position">
+                    <div class="project-title">
+                        <div class="project-center">
+                            <span class="project-text" style="font-size: 26px;">API Delivery</span></br>
+                            <p class="project-text-basic">Бэкенд-приложение службы доставки. Используемый стек технологий Node.js+CSS/HTML/JS. В качестве БД была исользована MongoDB, так же приложение было докерезировано</p>
+                            <a class="button-project-git" href="https://github.com/churikova-olga/delivery-service">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="project-position">
+                    <div class="project-title">
+                        <div class="project-center">
+                            <span class="project-text" style="font-size: 26px;">Note</span></br>
+                            <p class="project-text-basic">Приложения для заметок. Реализована автооризация с помощью Passport.js. Приложение написано с помощью Node.js и БД MySQL</p>
+                            <a class="button-project-git" href="https://github.com/churikova-olga/Note">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="project-position">
+                    <div class="project-title">
+                        <div class="project-center">
+                            <span class="project-text" style="font-size: 26px;">Город будущего</span></br>
+                            <p class="project-text-basic">Данное веб-приложение позволит жителям всей России делиться своими инициативами, проблемами, предложениями по улучшению их города\села\района и др. Приложение написано с помощью фркймворка Django.</p>
+                            <a class="button-project-git" href="https://github.com/churikova-olga/city_future">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="project-position">
+                    <div class="project-title">
+                        <div class="project-center">
+                            <span class="project-text" style="font-size: 26px;">CardGame</span></br>
+                            <p class="project-text-basic">Фрагмент карточной игры против компьютера, написанный на Vue.js.
+                            </p>
+                            <a class="button-project-git" href="https://github.com/churikova-olga/CardGame">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="project-position">
+                    <div class="project-title">
+                        <div class="project-center">
+                            <span class="project-text" style="font-size: 26px;">Travel</span></br>
+                            <p class="project-text-basic">Фрагмент приложения турфирмы. Реализовано в рамках ДПО по веб-разреботке. Основной стек технологи PHP+HTML/CSS/JS.</p>
+                            <a class="button-project-git" href="https://github.com/churikova-olga/travel">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="project-position">
+                    <div class="project-title">
+                        <div class="project-center">
+                            <span class="project-text" style="font-size: 26px;">ChapterSaver</span></br>
+                            <p class="project-text-basic">Настольное приложение для мониторинга обновлений в онлайн-библиотеках. Это приложение позволяет пользователю узнавать о выходе новых глав ваших любимых рассказов через гибкую систему оповещений. Написано на Python + PyQt и
+                                Qt Designer.
+                            </p>
+                            <a class="button-project-git" href="https://github.com/churikova-olga/ChapterSaver/tree/master">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="project-position">
+                    <div class="project-title">
+                        <div class="project-center">
+                            <span class="project-text" style="font-size: 26px;">slideText</span></br>
+                            <p class="project-text-basic">Модуль переключения текста, написанный на Vue.js.
+                            </p>
+                            <a class="button-project-git" href="https://github.com/churikova-olga/slideText">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="prev-2" onclick="plusSlides(-1, 1)">❮</a>
+            <a class="next-2" onclick="plusSlides(1, 1)">❯</a>
+
+            <div class="absolute-dot" style="text-align:center;">
+                <span class="dot-two" onclick="currentSlide(1, 1)"></span>
+                <span class="dot-two" onclick="currentSlide(2, 1)"></span>
+                <span class="dot-two" onclick="currentSlide(3, 1)"></span>
+                <span class="dot-two" onclick="currentSlide(4, 1)"></span>
+                <span class="dot-two" onclick="currentSlide(5, 1)"></span>
+                <span class="dot-two" onclick="currentSlide(6, 1)"></span>
+                <span class="dot-two" onclick="currentSlide(7, 1)"></span>
+                <span class="dot-two" onclick="currentSlide(8, 1)"></span>
+                <span class="dot-two" onclick="currentSlide(9, 1)"></span>
+                <span class="dot-two" onclick="currentSlide(10, 1)"></span>
+                <span class="dot-two" onclick="currentSlide(11, 1)"></span>
+                <span class="dot-two" onclick="currentSlide(12, 1)"></span>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section id="contacts" class="section contacts">
+
+        <div class="split left">
+            <div class="centered-column contacts-form">
+                <div class="title-section">
+                    <ul class="title-list">
+                        <li class="list">КОНТАКТЫ</li>
+                        <li class="list">
+                            <hr class="hr">
+                        </li>
+                    </ul>
+                </div>
+                <ul>
+                    <li class="introduction-list text-introduction"><b>Телефон</b> 8(958)643-18-86</li>
+                    <li class="introduction-list text-introduction"><b>Эл. почта</b> olga_churikova890@mail.ru</li>
+                    <li class="introduction-list text-introduction"><b>Город</b> Москва</li>
+                    <li class="introduction-list">
+                        <a href="https://vk.com/ochurikova" class="social-network">
+                            <img src="public/icon/vk.svg" height="50px" width="50px"></img>
+                        </a>
+                        <a href="https://www.instagram.com/anice_roonath/" class="social-network">
+                            <img src="public/icon/instagram.svg" height="50px" width="50px"></img>
+                        </a>
+                        <a href="t.me/anice2000" class="social-network">
+                            <img src="public/icon/telegram.svg" height="50px" width="50px"></img>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="split right">
+            <div class="centered-column">
+                <div class="title-section" style="margin: 50px 0 25px 0;">
+                    <ul class="title-list">
+                        <li class="list">СВЯЗАТЬСЯ СО МНОЙ</li>
+                        <li class="list">
+                            <hr class="hr">
+                        </li>
+                    </ul>
+                </div>
+                <div class="row-forms">
+                    <div style="width: 40%; height: 100%; display: flex; justify-content:center">
+                        <img src="public/img/fish.jpg" height="300px" width="250px"></img>
+                        <img class="img-contacts-absolute" src="public/img/mountains.jpg" height="150px" width="200px"></img>
+                    </div>
+                    <div style="width: 60%; height: 100%;">
+                        <form class="forms-touch" name="contact" method="POST" data-netlify="true">
+
+                            <label class="forms-label" for="fname">Имя</label>
+                            <input class="forms-input" type="text" id="fname" name="firstname" placeholder="Ваше имя..">
+                            <label class="forms-label" for="lname">Фамилия</label>
+                            <input class="forms-input" type="text" id="lname" name="lastname" placeholder="Ваша фамилия..">
+
+                            <label class="forms-label" for="subject">Сообщение</label>
+                            <textarea class="forms-input" id="subject" name="subject" placeholder="Сообщение.." style="height:150px"></textarea>
+
+                            <input class="button-forms" type="submit" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span class="footer-text">Портфолио 2022г</span>
+        <span class="footer-text">Использованы инонки <a style="color: black; text-decoration: none;" 
+            href="https://icons8.ru/icons/">ссылка</a></span>
+    </footer>
+</body>
+<script>
+    let slideIndex = [1, 1];
+    /* Class the members of each slideshow group with different CSS classes */
+    let slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+    }
+
+    function currentSlide(n, no) {
+        showSlides(slideIndex[no] = n, no);
+    }
+
+    function showSlides(n, no) {
+        let i;
+        let dots;
+        let x = document.getElementsByClassName(slideId[no]);
+        console.log(slideId[no])
+        if (slideId[no] === 'mySlides1') {
+            dots = document.querySelectorAll(".dot-one");
+        } else {
+            dots = document.querySelectorAll(".dot-two");
+        }
+
+        console.log(dots)
+        if (n > x.length) {
+            slideIndex[no] = 1
+        }
+        if (n < 1) {
+            slideIndex[no] = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        x[slideIndex[no] - 1].style.display = "block";
+        dots[slideIndex[no] - 1].className += " active";
+    }
+</script>
+
+</html>

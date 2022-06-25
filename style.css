@@ -1,0 +1,661 @@
+@font-face {
+    font-family: 'Montserrat';
+    /* Гарнитура шрифта */
+    src: url('./public/fonts/Montserrat-regular.ttf');
+    /* Путь к файлу со шрифтом */
+}
+
+
+/* html {
+    height: 100%;
+} */
+
+body {
+    margin: 0;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    margin: 0;
+    background-color: #C2C0D0;
+    border-bottom: 5px solid #666666;
+}
+
+.header {
+    display: flex;
+    margin: 0 60px;
+    align-items: center;
+    height: 100%;
+}
+
+.header-logo {
+    font-family: 'Cormorant Garamond';
+    font-size: 19px;
+}
+
+.header-nav {
+    width: 100%;
+}
+
+.header-nav-lists {
+    display: flex;
+    margin: 0;
+    padding: 0 100px;
+}
+
+.header-list {
+    list-style-type: none;
+    padding: 0 10px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+
+.git {
+    padding: 10px 50px;
+    position: fixed;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    right: 60px;
+    top: 2%;
+    z-index: 1;
+}
+
+.git:hover {
+    background-color: #CCCCCC;
+}
+
+.split {
+    height: 100vh;
+    width: 50%;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.split-short {
+    height: 70vh;
+    width: 50%;
+    top: 0;
+    overflow-x: hidden;
+}
+
+
+/* Control the left side */
+
+.left {
+    background-color: #CCCCCC;
+}
+
+
+/* Control the right side */
+
+.right {
+    background-color: #8EA69B;
+}
+
+.section {
+    display: flex;
+}
+
+.centered {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.img {
+    align-items: center;
+}
+
+.introduction-info {
+    margin: 50px 0;
+    padding: 0;
+}
+
+.introduction-list {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.name {
+    font-family: 'Cormorant Garamond';
+    font-size: 59px;
+    font-weight: bold;
+}
+
+.post {
+    font-family: 'Montserrat';
+    font-size: 28px;
+}
+
+.text-introduction {
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+
+.introduction-but {
+    padding: 10px 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    border-radius: 20px;
+    margin: 0 0 0 100px;
+    border: none;
+    text-decoration: none;
+}
+
+.introduction-but:hover {
+    background-color: #8EA69B;
+}
+
+.social-network {
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.title-section {
+    font-family: 'Cormorant Garamond';
+    font-size: 22px;
+}
+
+.summary {
+    padding: 30px 130px 50px 130px;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    margin: 100px 0;
+    height: 0%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.summary:hover {
+    background-color: #8EA69B;
+}
+
+.centered-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.title-list {
+    display: flex;
+    padding: 0;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0 10px;
+    letter-spacing: 5px;
+}
+
+.hr {
+    width: 280px;
+    border: 0.1px solid black;
+}
+
+.section-text {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    width: 75%;
+    line-height: 2;
+}
+
+.circle {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: #CCCCCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s;
+}
+
+.hr-skills {
+    width: 10px;
+    border: 0.1px solid black;
+}
+
+.circle:hover {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+
+/* /////// */
+
+.mySlides1,
+.mySlides2 {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 140%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev-2,
+.next-2 {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.absolute-dot {
+    position: absolute;
+    width: auto;
+    margin-bottom: -400px;
+}
+
+
+/* Position the "next button" to the right */
+
+.next,
+.next-2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-2 {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover,
+.prev-2:hover,
+.next-2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.dot-one,
+.dot-two {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot-one:hover,
+.dot-two:hover {
+    background-color: #717171;
+}
+
+.slides-skills {
+    justify-content: center;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #d2cbcb;
+    text-align: center;
+    border-radius: 20px;
+    height: 30px;
+}
+
+.scale {
+    height: 18px;
+    background-color: #767876;
+    border-radius: 20px;
+    height: 30px;
+}
+
+.bar-1 {
+    width: 80%;
+}
+
+.bar-2 {
+    width: 80%;
+}
+
+.bar-3 {
+    width: 70%;
+}
+
+.bar-4 {
+    width: 80%;
+}
+
+.bar-5 {
+    width: 60%;
+}
+
+.bar-6 {
+    width: 70%;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.bar-skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    margin: 20px 50px;
+}
+
+.bar-text {
+    margin: 10px 0;
+}
+
+.row {
+    display: flex;
+    margin: 50px 0 20px 0;
+    align-items: center;
+}
+
+.col {
+    width: 100%;
+}
+
+.link-nav {
+    color: black;
+    text-decoration: none;
+}
+
+.arrow {
+    animation: nev 5s infinite;
+}
+
+
+/* .arrow:hover {
+    transform: scale(2);
+} */
+
+@keyframes nev {
+    from {
+        /* От */
+        transform: scale(1);
+    }
+    to {
+        /* До */
+        transform: scale(2);
+    }
+}
+
+.education-list {
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.education-block-list {
+    padding: 0;
+    margin: 50px 10px;
+}
+
+.experience {
+    justify-content: center;
+}
+
+.education-margin {
+    margin-top: 50px;
+}
+
+.english {
+    margin: 0 50px 10px;
+    letter-spacing: 5px;
+    font-size: 19px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.gradient {
+    background: linear-gradient(to right, #CCCCCC 50.05%, #8EA69B 50%);
+    padding-top: 60px;
+}
+
+.row-achievements {
+    display: flex;
+    width: 100%;
+}
+
+.column-achievements {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.content {
+    height: 200px;
+    background: #F6EBE4;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+}
+
+.title-achievements {
+    font-family: 'Cormorant Garamond';
+    font-size: 29px;
+}
+
+.text-achievements {
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+.justify-rigth {
+    justify-content: flex-start;
+}
+
+.justify-left {
+    justify-content: flex-end;
+}
+
+.content:hover {
+    transform: translate3d(0px, -20px, 0px);
+}
+
+.slideshow-container2 {
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-position {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-center {
+    height: 320px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: #cccccc;
+}
+
+.project-text {
+    text-align: center;
+    font-family: 'Montserrat'
+}
+
+.mySlides2 {
+    height: 100%;
+    width: 100%;
+    background-color: #5989a0;
+}
+
+.project-text-basic {
+    font-size: 15px;
+    font-family: 'Montserrat';
+    text-align: center;
+    padding: 0 20px;
+}
+
+.button-project-git {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    display: block;
+    padding: 10px 0 10px 0px;
+    margin: 10px auto;
+}
+
+.button-project-git:hover {
+    background-color: #8EA69B;
+}
+
+.contacts-form {
+    justify-content: center;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #C2C0D0;
+    border-top: 5px solid #666666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.forms-touch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+}
+
+.forms-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 70%;
+    padding: 10px;
+    resize: vertical;
+}
+
+.row-forms {
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.forms-label {
+    width: 70%;
+    margin: 15px 0;
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+.button-forms {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    text-align: center;
+    width: 200px;
+    display: block;
+    padding: 10px 0 10px 0px;
+    margin: 25px auto;
+    border: none;
+}
+
+.button-forms:hover {
+    background-color: #CCCCCC;
+}
+
+.img-contacts-absolute {
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 50px;
+}
